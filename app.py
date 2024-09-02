@@ -46,7 +46,7 @@ with col2:
     st.title("John Oscar Roble")
 
 st.write("I am a passionate 4th-year BSIT student with a diverse interest in the tech field. I have chosen to focus my career on Quality Assurance (QA) testing, where I can leverage my technical skills and attention to detail. Currently, I am enhancing my expertise by pursuing the Google IT Automation with Python certification on Coursera, sponsored by the DTI x Google Career Certification Program. I am eager to learn new skills and apply my knowledge in a professional environment.")
-
+st.divider()
 choices = st.multiselect("What's your favorite programming language?", ["Java", "Python", "SQL", "Typescript"])
 
 # Toggle button to show/hide the gallery
@@ -57,7 +57,7 @@ if st.session_state.show_gallery:
 else:
     if st.button("Show Certificates ▿"):
         st.session_state.show_gallery = True
-
+st.divider()
 st.header("How do you find my website?")
 feedback = st.text_area("Please provide your feedback here:")
 
